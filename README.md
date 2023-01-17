@@ -65,6 +65,34 @@ Retorna:
 }
 ```
 
+- **`GET /service`**: Rota para retornar todos os serviços
+
+Retorna:
+```
+[
+    {
+        "_id": "63c6ae5990389e49bedc99b2",
+        "name": "Algum serviço",
+        "description": "Alguma descrição",
+        "price": 1400,
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+        "createdAt": "2023-01-17T14:19:05.542Z",
+        "updatedAt": "2023-01-17T14:19:05.542Z",
+        "__v": 0
+    },
+    {
+        "_id": "63c6af60dd75624b889f3ea7",
+        "name": "Algum serviço 2",
+        "description": "Alguma descrição 2",
+        "price": 750,
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+        "createdAt": "2023-01-17T14:23:28.994Z",
+        "updatedAt": "2023-01-17T14:23:28.994Z",
+        "__v": 0
+    }
+]
+```
+
 ## 🤔 Como contribuir
 
 - Faça um fork desse repositório;
