@@ -149,7 +149,7 @@ Retorna:
 ```
 
 
-- **`POST /parties`**: Rota de criação de festas
+- **`POST /parties`**: Rota de criação de festas (SEM SERVIÇO)
 
 Enviar:
 ```
@@ -179,6 +179,123 @@ Retorna:
     "msg": "Festa criada com sucesso!"
 }
 ```
+
+- **`POST /parties`**: Rota de criação de festas (COM SERVIÇO)
+
+Enviar:
+```
+{
+    "title": "Meu evento",
+    "author": "João",
+    "description": "Festa do João",
+    "budget": 6000,
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+    "services": [
+        {
+            "name": "Algum serviço 4",
+            "description": "Alguma descrição 4",
+            "price": 3500,
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE"
+        },
+        {
+            "name": "Algum serviço 5",
+            "description": "Alguma descrição 5",
+            "price": 1500,
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE"
+        }
+    ]
+}
+```
+Retorna:
+```
+{
+    "response": {
+        "title": "Meu evento",
+        "author": "João",
+        "description": "Festa do João",
+        "budget": 6000,
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+        "services": [
+            {
+                "name": "Algum serviço 4",
+                "description": "Alguma descrição 4",
+                "price": 3500,
+                "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+                "_id": "63c6b971467a0a4a9235fd73",
+                "createdAt": "2023-01-17T15:06:25.324Z",
+                "updatedAt": "2023-01-17T15:06:25.324Z"
+            },
+            {
+                "name": "Algum serviço 5",
+                "description": "Alguma descrição 5",
+                "price": 1500,
+                "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+                "_id": "63c6b971467a0a4a9235fd74",
+                "createdAt": "2023-01-17T15:06:25.324Z",
+                "updatedAt": "2023-01-17T15:06:25.324Z"
+            }
+        ],
+        "_id": "63c6b971467a0a4a9235fd72",
+        "createdAt": "2023-01-17T15:06:25.325Z",
+        "updatedAt": "2023-01-17T15:06:25.325Z",
+        "__v": 0
+    },
+    "msg": "Festa criada com sucesso!"
+}
+```
+
+- **`GET /parties`**: Rota para retornar todas as festas
+
+Retorna:
+```
+[
+    {
+        "_id": "63c6b8b5467a0a4a9235fd70",
+        "title": "Meu evento",
+        "author": "João",
+        "description": "Festa do João",
+        "budget": 6000,
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+        "services": [],
+        "createdAt": "2023-01-17T15:03:17.954Z",
+        "updatedAt": "2023-01-17T15:03:17.954Z",
+        "__v": 0
+    },
+    {
+        "_id": "63c6b971467a0a4a9235fd72",
+        "title": "Meu evento",
+        "author": "João",
+        "description": "Festa do João",
+        "budget": 6000,
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+        "services": [
+            {
+                "name": "Algum serviço 4",
+                "description": "Alguma descrição 4",
+                "price": 3500,
+                "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+                "_id": "63c6b971467a0a4a9235fd73",
+                "createdAt": "2023-01-17T15:06:25.324Z",
+                "updatedAt": "2023-01-17T15:06:25.324Z"
+            },
+            {
+                "name": "Algum serviço 5",
+                "description": "Alguma descrição 5",
+                "price": 1500,
+                "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+                "_id": "63c6b971467a0a4a9235fd74",
+                "createdAt": "2023-01-17T15:06:25.324Z",
+                "updatedAt": "2023-01-17T15:06:25.324Z"
+            }
+        ],
+        "createdAt": "2023-01-17T15:06:25.325Z",
+        "updatedAt": "2023-01-17T15:06:25.325Z",
+        "__v": 0
+    }
+]
+```
+
+
 
 ## 🤔 Como contribuir
 

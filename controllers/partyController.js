@@ -36,9 +36,9 @@ const partyController = {
 
     getAll: async (req, res) => {
         try {
-            const services = await ServiceModel.find();
+            const parties = await PartyModel.find();
 
-            res.json(services);
+            res.json(parties);
         } catch (error) {
             console.log(error);
         }
@@ -47,14 +47,14 @@ const partyController = {
     get: async (req, res) => {
         try {
             const id = req.params.id;
-            const service = await ServiceModel.findById(id);
+            const party = await PartyModel.findById(id);
 
-            if(!service) {
-                res.status(404).json({ msg: 'Serviço não encontrado.' });
+            if(!party) {
+                res.status(404).json({ msg: 'Festa não encontrada.' });
                 return;
             }
 
-            res.json(service);
+            res.json(party);
         } catch (error) {
             console.log(error);
         }
