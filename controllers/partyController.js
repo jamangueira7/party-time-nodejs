@@ -63,16 +63,16 @@ const partyController = {
     delete: async (req, res) => {
         try {
             const id = req.params.id;
-            const service = await ServiceModel.findById(id);
+            const party = await PartyModel.findById(id);
 
-            if(!service) {
-                res.status(404).json({ msg: 'Serviço não encontrado.' });
+            if(!party) {
+                res.status(404).json({ msg: 'Festa não encontrada.' });
                 return;
             }
 
-            const deletedService = await ServiceModel.findByIdAndDelete(id);
+            const deletedParty = await PartyModel.findByIdAndDelete(id);
 
-            res.status(200).json({ deletedService, msg: 'Serviço excluído com sucesso!' });
+            res.status(200).json({ deletedParty, msg: 'Festa excluída com sucesso!' });
 
         } catch (error) {
             console.log(error);

@@ -295,7 +295,7 @@ Retorna:
 ]
 ```
 
-- **`GET /parties/:id`**: Rota para retornar um festa
+- **`GET /parties/:id`**: Rota para retornar uma festa
 
 Retorna:
 ```
@@ -310,6 +310,27 @@ Retorna:
     "createdAt": "2023-01-17T15:03:17.954Z",
     "updatedAt": "2023-01-17T15:03:17.954Z",
     "__v": 0
+}
+```
+
+- **`DELETE /parties/:id`**: Rota para deletar uma festa
+
+Retorna:
+```
+{
+    "deletedParty": {
+        "_id": "63c6b8b5467a0a4a9235fd70",
+        "title": "Meu evento",
+        "author": "João",
+        "description": "Festa do João",
+        "budget": 6000,
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
+        "services": [],
+        "createdAt": "2023-01-17T15:03:17.954Z",
+        "updatedAt": "2023-01-17T15:03:17.954Z",
+        "__v": 0
+    },
+    "msg": "Festa excluída com sucesso!"
 }
 ```
 
