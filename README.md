@@ -335,7 +335,7 @@ Retorna:
 }
 ```
 
-- **`PUT /parties`**: Rota de atualização de festas
+- **`PUT /parties/:id`**: Rota de atualização de festas
 
 Enviar:
 ```
