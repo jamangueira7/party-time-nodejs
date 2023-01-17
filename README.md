@@ -7,10 +7,6 @@
 
 <br>
 
-<p align="center">
-  <img alt="notification" src=".github/image.png">
-</p>
-
 ## Party Time
 
 ## 🚀 Tecnologias
