@@ -11,23 +11,53 @@
   <img alt="notification" src=".github/image.png">
 </p>
 
+## Party Time
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Nodejs](https://nodejs.org/en/) 
-- [Nestjs](https://nestjs.com/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Nodejs](https://nodejs.org/en/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [MongoDB](https://www.mongodb.com/)
 
 ## 💻 Projeto
 
-Projeto desenvolvido com Node.js.
+API em NodeJS para a criação e gerenciamento de festas.
 
-Evento do Ignite Lab na plataforma da [Rocketseat](https://www.rocketseat.com.br/)
+Evento do Ignite Lab na plataforma da [Matheus Battisti - Hora de Codar](https://www.youtube.com/watch?v=anMK76I2dUA)
 
 ## 🚀 Como Rodar
 
 - Clone o projeto.
+- Entre na pasta do projeto e rode npm install (pode usar yarn install de acordo com a sua configuração).
+- configura o banco de dados MongoDB no arquivo conn.js.
+
+- npm run start:dev para rodar o projeto (localhost:3000).
+
+## 👩🏿‍💻 Rotas
+
+- **`POST /service`**: Rota de criação de serviços
+
+Enviar:
+```
+{
+    "content":  "test",
+    "category": "test",
+    "recipientId": "c1d4fe30-229a-4bb0-8f44-d4d0e5df9246"
+}
+```
+Retorna:
+```
+{
+    "notification": {
+        "id": "f40b9fcb-d6b0-4988-913e-ff8ffaa70e0b",
+        "category": "test",
+        "content": "test",
+        "recipientId": "c1d4fe30-229a-4bb0-8f44-d4d0e5df9246"
+    }
+}
+```
 
 ## 🤔 Como contribuir
 
